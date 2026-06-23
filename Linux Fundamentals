@@ -1,0 +1,506 @@
+# Linux Fundamentals
+
+## Repository Purpose
+
+This repository documents my Linux learning journey as part of my cybersecurity, Digital Forensics & Incident Response (DFIR), Security+, Cyber Club, and National Cyber League (NCL) preparation.
+
+The goal of this repository is to build a strong foundation in Linux system administration, command-line navigation, file management, permissions, networking, and log analysis.
+
+---
+
+# Topics Covered
+
+## 01 - Linux File System
+
+### Objective
+
+Understand the Linux directory structure and the purpose of common system folders.
+
+### Topics
+
+* /
+* /home
+* /root
+* /etc
+* /var
+* /usr
+* /bin
+* /tmp
+
+### Skills Practiced
+
+* File System Navigation
+* Directory Recognition
+* Linux Architecture Basics
+
+### DFIR Relevance
+
+Understanding where logs, configuration files, and user data are stored is essential during investigations.
+
+---
+
+## 02 - Navigation Commands
+
+### Commands Covered
+
+pwd
+
+ls
+
+ls -la
+
+cd
+
+tree
+
+### Skills Practiced
+
+* Directory Navigation
+* File Discovery
+* Command Line Familiarity
+
+### What I Learned
+
+Linux navigation commands allow users to move through the file system efficiently and locate files and directories.
+
+---
+
+## 03 - File Management
+
+### Commands Covered
+
+mkdir
+
+touch
+
+cp
+
+mv
+
+rm
+
+cat
+
+nano
+
+### Skills Practiced
+
+* File Creation
+* File Editing
+* File Deletion
+* File Organization
+
+### Safety Considerations
+
+Use caution when executing rm commands because deleted files are not automatically recoverable.
+
+---
+
+## 04 - Users and Groups
+
+### Commands Covered
+
+whoami
+
+id
+
+groups
+
+sudo
+
+passwd
+
+### Skills Practiced
+
+* User Management
+* Group Management
+* Privilege Awareness
+
+### DFIR Relevance
+
+User activity is commonly reviewed during forensic investigations and incident response activities.
+
+---
+
+## 05 - Permissions
+
+### Commands Covered
+
+chmod
+
+chown
+
+ls -l
+
+### Topics Covered
+
+* Read Permissions
+* Write Permissions
+* Execute Permissions
+* Ownership
+
+### Example
+
+chmod 755 file.txt
+
+### Skills Practiced
+
+* Permission Management
+* Access Control
+* Security Hardening
+
+---
+
+## 06 - Processes
+
+### Commands Covered
+
+ps
+
+top
+
+htop
+
+kill
+
+### Skills Practiced
+
+* Process Monitoring
+* Process Management
+* Resource Analysis
+
+### DFIR Relevance
+
+Investigators often review active processes to identify malicious or suspicious activity.
+
+---
+
+## 07 - Networking Commands
+
+### Commands Covered
+
+ip a
+
+ping
+
+netstat
+
+ss
+
+nslookup
+
+traceroute
+
+### Skills Practiced
+
+* Network Troubleshooting
+* Connectivity Testing
+* Interface Analysis
+
+### Connections to Previous Repositories
+
+This section reinforces concepts learned in:
+
+* Network Fundamentals
+* Cybersecurity Labs
+* Wireshark Basics
+
+---
+
+## 08 - Package Management
+
+### Commands Covered
+
+apt update
+
+apt upgrade
+
+apt install
+
+apt remove
+
+### Skills Practiced
+
+* Software Installation
+* System Maintenance
+* Package Management
+
+---
+
+## 09 - Log Files
+
+### Important Locations
+
+/var/log
+
+### Log Files Covered
+
+auth.log
+
+syslog
+
+kern.log
+
+### Skills Practiced
+
+* Log Analysis
+* Event Review
+* System Monitoring
+
+### DFIR Relevance
+
+Logs are one of the primary sources of evidence during incident response and forensic investigations.
+
+---
+
+## 10 - Linux Cheat Sheet
+
+### Purpose
+
+Create a quick-reference guide for commonly used Linux commands.
+
+### Commands Included
+
+pwd
+
+ls
+
+ls -la
+
+cd
+
+mkdir
+
+touch
+
+cp
+
+mv
+
+rm
+
+cat
+
+grep
+
+find
+
+ping
+
+ip a
+
+sudo
+
+chmod
+
+chown
+
+---
+
+# Screenshots Folder
+
+Store screenshots from:
+
+* TryHackMe Linux Rooms
+* Terminal Practice Sessions
+* Command Outputs
+* Linux Labs
+
+Example Files:
+
+01-pwd-command.png
+
+02-ls-command.png
+
+03-file-permissions.png
+
+04-process-monitoring.png
+
+---
+
+# Skills Developed
+
+* Linux Navigation
+* File Management
+* User Administration
+* Permissions Management
+* Process Analysis
+* Network Troubleshooting
+* Log Analysis
+* Command Line Operations
+
+---
+
+# Connections to Cybersecurity
+
+Linux skills are essential for:
+
+* Digital Forensics & Incident Response (DFIR)
+* Security Operations Center (SOC) Roles
+* Threat Hunting
+* Cybersecurity Analysis
+* Network Security
+* National Cyber League (NCL)
+* Cybersecurity Competitions
+
+---
+
+# Future Learning Goals
+
+* Advanced Linux Administration
+* Bash Scripting
+* Linux Security Hardening
+* Log Analysis
+* Threat Hunting
+* Digital Forensics
+* Security+ Preparation
+
+---
+
+# Career Goal
+
+Develop Linux proficiency to support future work in cybersecurity, Digital Forensics & Incident Response (DFIR), incident response, and cyber investigations.
+# Do's and Don'ts
+
+## Do's
+
+### Do Practice Regularly
+
+Linux skills improve through repetition and daily use.
+
+### Do Read Command Output Carefully
+
+Many mistakes occur because users execute commands without reviewing the output.
+
+### Do Use the Manual Pages
+
+Learn to use:
+
+man <command>
+
+Example:
+
+man ls
+
+### Do Keep Notes
+
+Document commands, observations, and lessons learned while practicing.
+
+### Do Understand Before Memorizing
+
+Focus on understanding what a command does rather than simply memorizing syntax.
+
+---
+
+## Don'ts
+
+### Don't Run Commands You Don't Understand
+
+Research commands before executing them.
+
+### Don't Use sudo Unnecessarily
+
+Only elevate privileges when required.
+
+### Don't Delete Files Without Verifying
+
+Always confirm the file path before using:
+
+rm
+
+or
+
+rm -rf
+
+### Don't Ignore Error Messages
+
+Error messages often provide useful troubleshooting information.
+
+### Don't Depend Entirely on Copy-and-Paste
+
+Typing commands manually helps build familiarity and confidence.
+
+---
+
+# Bonus Tips
+
+## Tip #1 - Build a Home Lab
+
+The best way to learn Linux is through hands-on practice.
+
+Virtual machines and TryHackMe labs provide safe learning environments.
+
+---
+
+## Tip #2 - Learn One Command Per Day
+
+Small daily improvements compound over time.
+
+---
+
+## Tip #3 - Use Linux Every Week
+
+Consistency is more valuable than occasional long study sessions.
+
+---
+
+## Tip #4 - Document Everything
+
+Good documentation habits help with:
+
+* Cybersecurity
+* DFIR
+* Incident Response
+* Professional Reporting
+
+---
+
+## Tip #5 - Learn the "Why"
+
+When learning a command, ask:
+
+Why would a system administrator use this?
+
+Why would a DFIR analyst use this?
+
+Why would a SOC analyst use this?
+
+---
+
+## Tip #6 - Connect Concepts Together
+
+Linux becomes easier when connected to:
+
+* Networking
+* Wireshark
+* Security+
+* TryHackMe
+* DFIR
+
+---
+
+## Tip #7 - Be Comfortable Being a Beginner
+
+Every cybersecurity professional started with basic commands such as:
+
+pwd
+
+ls
+
+cd
+
+Learning fundamentals creates the foundation for advanced skills later.
+
+---
+
+# Personal Reminder
+
+The goal is not to learn Linux overnight.
+
+The goal is to become slightly better every day.
+
+Consistency beats intensity.
+
+Keep learning.
+Keep documenting.
+Keep improving.
